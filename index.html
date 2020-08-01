@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CODEXPLORE</title>
+    <title>CodeXplore</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="default.css">
+    <link rel="stylesheet" type="text/css" href="./css/default.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 
 <body>
@@ -38,16 +40,26 @@
                     <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="settings-note">*Theme settings will be saved for <br>your next visit </p>
                 </div>
                 <div class="right-column">
-                    Right-Column
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <div id="corner-tl" class="corner"></div>
+                            <div id="corner-tr" class="corner"></div>
+                            <h3>CodeXplore ❓</h3>
+                            <p>Platform chia sẻ kiến thức về Lập Trình [Coding] dành cho các bạn trẻ
+                                Việt Nam </p>
+                            <div id="corner-br" class="corner"></div>
+                            <div id="corner-bl" class="corner"></div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -57,21 +69,135 @@
 
     <section class="s2">
         <div class="main-container">
-            About
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More about me</h4>
+
+                    <p>
+                        Channel của mình sẽ focus vào các chủ đề sau:<br>
+                        ► [Code] Full-Stack Web Development (HTML, CSS, JavaScript, Node JS và React JS) ☞ Future
+                        Projects: Deno<br>
+                        ► [Code] Coding (Python & JavaScript) Interview Preparation (Cấu Trúc Dữ Liệu và Thuật Toán &
+                        LeetCode Solutions)<br>
+                        <br>
+                        ► [Xplore] Travel Vlog (Chia sẻ kinh nghiệm đi du lịch và trải nghiệm)
+                    </p>
+
+                    <hr>
+                    <h4>TOP EXPERTISE</h4>
+
+                    <p>
+                        Fullstack developer with primary focus on Node JS & Deno (Back-End) + React JS (Front-End):
+                        <a target="_blank" href="./src/files/resume/Quan_Nguyen Ha-Resume-R4.pdf">Download Resume</a>
+                    </p>
+
+                    <div id="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                        </ul>
+
+                        <ul>
+                            <li>Node JS</li>
+                            <li>Deno</li>
+                            <li>React JS</li>
+                            <li>Heroku</li>
+                            <li>AWS</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="social-links">
+                    <img id="social_img" src="images/codexplore_youtube_page.png">
+                    <h3>Find me on Twitter & Youtube</h3>
+                    <a target="_blank" href="https://www.youtube.com/c/codexplore">Youtube: @CodeXplore</a>
+                    <br>
+                    <a target="_blank" href="https://github.com/CodeXploreRepo">GitHub: @CodeXploreRepo</a>
+                    <br>
+                    <a target="_blank" href="https://www.linkedin.com/in/QuanNgHa/">Linkedin: @QuanNgHa</a>
+
+
+                </div>
+
+
+            </div>
         </div>
     </section>
 
     <section class="s1">
         <div class="main-container">
-            Portfolio
+            <h3 style="text-align: center;">Some of my past projects</h3>
+
+            <div class="post-wrapper">
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/projects/dash.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Laboratory Management System</h6>
+                            <p class="post-intro">Designed built & mantained a the lab managment system for FOI
+                                Laboratories</p>
+                            <a href="./pages/post.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/projects/ecom.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Online Store - CoursePost Title</h6>
+                            <p class="post-intro">Online store with paypal payments intergration and guest user shopping
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/projects/membership site.jpg">
+                        <div class="post-preview">
+                            <h6 class="post-title">Membership Website</h6>
+                            <p class="post-intro">Modulized guide for online courses with step by step intructions</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Get In Touch</h3>
+
+            <form id="contact-form">
+                <a name="contact"></a>
+
+                <label>Name</label>
+                <input class="input-field" type="text" name="name">
+
+                <label>Subject</label>
+                <input class="input-field" type="text" name="subject">
+
+                <label>Email</label>
+                <input class="input-field" type="text" name="email">
+
+                <label>Message</label>
+                <textarea class="input-field" name="message"></textarea>
+                <input type="submit" value="Send" id="submit-btn">
+            </form>
         </div>
     </section>
+
+
+    <script type="text/JavaScript" src="./scripts/script.js"></script>
 </body>
 
 </html>
